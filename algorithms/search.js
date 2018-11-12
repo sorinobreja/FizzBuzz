@@ -4,38 +4,43 @@
 
 /**
  * Search for the number in the sorted list with the linear search algorithm
- * and return how many comparisons was needed to find it.
+ * and return the index of the element.
+ *
+ * Optional: print out how many comparision was needed to find the number
+ *
  * @param {number} number The number to search for
  * @param {array} list Ascending list of numbers
- * @returns {number} Number of comparisons
+ * @returns {number|null} Index of the element or null
  */
 function linear_search(number, list) {
 
 
-    return 0;
+    return null;
 }
-
 
 /**
  * Search for the number in the sorted list with the binary search algorithm
- * and return how many comparisons was needed to find it.
+ * and return the index of the element.
+ *
+ * Optional: print out how many comparision was needed to find the number
+ *
  * @param {number} number The number to search for
  * @param {array} list Ascending list of numbers
- * @returns {number} Number of comparisons
+ * @returns {number|null} Index of the element or null
  */
 function binary_search(number, list) {
 
 
-    return 0;
+    return null;
 }
 
-function print_result(search, comparisons_count) {
+function print_result(search, index) {
     let result = search + ' search ';
 
-    if (comparisons_count > 0) {
-        result += `found it in ${comparisons_count} steps.`
-    } else {
+    if (index === null) {
         result += 'did not find it.'
+    } else {
+        result += `found it on index ${index}.`
     }
 
     console.log(result);
