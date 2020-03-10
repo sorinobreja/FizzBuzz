@@ -13,7 +13,11 @@
  * @returns {number|null} Index of the element or null
  */
 function linear_search(number, list) {
-
+    for (var i=1; i <= 100; i++)
+    {
+        if(list[i] == number)
+            return i;
+    }
 
     return null;
 }
@@ -29,8 +33,22 @@ function linear_search(number, list) {
  * @returns {number|null} Index of the element or null
  */
 function binary_search(number, list) {
-
-
+    first = 0;
+    last = list.length - 1;
+    while(first <= last){
+        mid = (first + last) // 2;
+        if(list[mid] == number){
+            return mid;
+        }
+        else{
+            if(number < list[mid]){
+                last = mid - 1;
+            }
+            else{
+                first = mid - 1;
+            }
+        }
+    }
     return null;
 }
 

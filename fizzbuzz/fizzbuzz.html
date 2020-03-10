@@ -12,7 +12,17 @@
         */
 
         // write your JS code here
-
+        for (var i=1; i <= 100; i++)
+        {
+            if (i % 3 == 0 && i % 5 == 0)
+                console.log('FizzBuzz');
+            else if (i % 3 == 0)
+                console.log('Fizz');
+            else if (i % 5 == 0)
+                console.log('Buzz');
+            else
+                console.log(i);
+        }
         console.log('Hello World!');
 
     </script>
@@ -21,6 +31,6 @@
 <p>Yes, this is an empty page.</p>
 <p>Yes, it is ugly.</p>
 <p>Check out the Console instead.</p>
-<p>Still here? Hit <em>CTRL - SHIFT - J</em>... Now.</p>
+<p>Still here? Hit <em>Command - Option - J</em>... Now.</p>
 </body>
 </html>
